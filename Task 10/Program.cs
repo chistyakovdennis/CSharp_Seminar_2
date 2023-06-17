@@ -2,3 +2,17 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
+
+Console.Write("Введите трехзначное число: "); // Запрос трехзначного числа
+int number = Convert.ToInt32(Console.ReadLine());
+
+int secondDigit = (number / 10) % 10;
+
+if (number < 100 || number >= 1000) // Проверка, трехзначное ли число
+{
+    Console.WriteLine("Вы ввели не трехзначное число. Повторите ввод."); 
+}
+else
+{
+    Console.WriteLine("Вторая цифра числа: " + secondDigit); 
+}
